@@ -1,0 +1,13 @@
+chromedriver-binary
+fastapi
+uvicorn
+selenium==3.141.0
+sqlalchemy
+pymysql
+pandas
+bs4
+webdriver-manager
+lxml
+requests
+html5lib
+schedule

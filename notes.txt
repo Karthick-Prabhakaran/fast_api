@@ -1,0 +1,22 @@
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.support import expected_conditions as EC
+docker pull mysql
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql
+
+docker pull python
+docker run -dit --name python-latest <python image name>
+docker run -dit --name python-latest 33ce09363487
+docker pull selenium/standalone-chrome
+docker run --rm -it -p 4444:4444 -p 7900:7900 --shm-size 2g selenium/standalone-chrome:3.141.59-titanium
+
+docker ps -a 
+
+
+to install vim inside sh4.4 docker image mysql terminal
+microdnf install -y vim
+
+docker inspect f43943f24b0f -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+'172.29.0.3'
+
+#always keyword is used to start containers automatically on docker restart
